@@ -19,10 +19,21 @@ android {
         }
     }
 
+    // To auto-sign release on local
+//    signingConfigs {
+//        release {
+//            storeFile file(System.getenv("HOME") + "/keystores/arreis")
+//            storePassword System.getenv("KEYSTORE_PASSWORD")
+//            keyAlias System.getenv("WISHLIST_KEY_ALIAS")
+//            keyPassword System.getenv("WISHLIST_KEY_PASSWORD")
+//        }
+//    }
+
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.release
         }
     }
     compileOptions {
