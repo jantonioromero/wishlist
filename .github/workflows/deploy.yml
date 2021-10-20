@@ -42,4 +42,4 @@ jobs:
           packageName: com.arreis.wishlist
           releaseFiles: app/build/outputs/bundle/release/app-release.aab
           track: internal
-          whatsNewDirectory: whatsNewDirectory/
+          whatsNewDirectory: whatsNew/
